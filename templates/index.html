@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="upload-section">
+    <form action="{{ url_for('results') }}" method="POST" enctype="multipart/form-data">
+        <label for="file">Upload Weather Dataset:</label>
+        <input type="file" name="file" required>
+        <button type="submit">Analyze</button>
+    </form>
+</div>
+{% endblock %}

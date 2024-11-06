@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="results-section">
+    <h2>Model Evaluation Results</h2>
+    <p><strong>Accuracy:</strong> {{ metrics.accuracy }}</p>
+    <h3>Classification Report:</h3>
+    <pre>{{ metrics.report }}</pre>
+
+    <h3>Best Model Parameters:</h3>
+    <pre>{{ best_params }}</pre>
+</div>
+{% endblock %}
